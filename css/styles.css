@@ -19,7 +19,7 @@ body {
   overflow: hidden;
 }
 
-.cf:after {
+.cf::after {
   content: "";
   display: table;
   clear: both;
@@ -40,7 +40,6 @@ body {
 }
 
 .logo img:first-child {
-  position: absolute;
   display: none;
 }
 
@@ -152,4 +151,44 @@ h2 {
 .footer p {
   font-size: .7em;
   text-align: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 400px) {
+  .characters {
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .logo img:first-child {
+    position: absolute;
+    display: block;
+  }
+
+  .wrapper {
+    float: left;
+    width: 30%;
+  }
+
+  .content {
+    float: right;
+    width: 70%;
+  }
+
+  nav {
+    position: absolute;
+    top: 300px;
+    width: 25%;
+    margin-left: 2.5%;
+  }
+
+  nav li {
+    display: block;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    border-bottom: thin solid #95928f;
+  }
 }
