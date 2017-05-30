@@ -71,18 +71,20 @@ nav li {
   border-bottom: thin solid #95928f;
 }
 
-a:link {
+a:link, a:visited {
   color: #8c0101;
   text-decoration: none;
 }
 
 a:hover {
   color: red;
+  transition: all .7s;
 }
 
 h3 {
   text-align: center;
   font-weight: normal;
+  white-space: pre;
 }
 
 h3 + p {
@@ -162,33 +164,53 @@ h2 {
 }
 
 @media screen and (min-width: 600px) {
-  .logo img:first-child {
-    position: absolute;
-    display: block;
-  }
 
   .wrapper {
     float: left;
     width: 30%;
+    padding-bottom: 30000px;
+    margin-bottom: -30000px;
+    overflow: hidden;
+    padding-top: 20px;
   }
-
   .content {
     float: right;
     width: 70%;
   }
-
   nav {
     position: absolute;
     top: 300px;
     width: 25%;
     margin-left: 2.5%;
   }
-
   nav li {
     display: block;
     width: auto;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     border-bottom: thin solid #95928f;
+    font-size: 1em;
+    font-family: "librebaskerville";
   }
+  .logo img:first-child {
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+  }
+  .logo img:nth-child(2) {
+    top: 150px;
+  }
+  h3 {
+    padding-top: 120px;
+    font-size: 1.6em;
+  }
+  .bold {
+    font-weight: bolder;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+  }
+
 }
