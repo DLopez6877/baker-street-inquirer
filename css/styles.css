@@ -1,0 +1,155 @@
+/*//FONTS*/
+@font-face {
+  font-family: "librebaskerville";
+  src: url(../fonts/librebaskerville-regular.otf);
+}
+
+/*GENERAL*/
+body {
+  margin: 0;
+  background-color: #e7e7e7;
+  font-family: "librebaskerville";
+}
+
+.container {
+  position: relative;
+  background-image: url('../img/rag.png');
+  background-position: top;
+  background-repeat: repeat-x;
+  overflow: hidden;
+}
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#rag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+.logo {
+  position: relative;
+  /*height: 279px;*/
+  height: 80px;
+  margin-top: 10px;
+}
+
+.logo img:first-child {
+  position: absolute;
+  display: none;
+}
+
+.logo img:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+/*NAV*/
+nav ul {
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 10px;
+  text-align: center;
+  margin: 40px 10px 0 10px;
+  padding: 0;
+  font-family: sans-serif;
+  border-top: thin solid #95928f;
+}
+
+nav li {
+  display: inline-block;
+  width: 28%;
+  margin: 2%;
+  padding-bottom: 10px;
+  border-bottom: thin solid #95928f;
+}
+
+a:link {
+  color: #8c0101;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+}
+
+h3 + p {
+  font-size: .9em;
+  line-height: 1.5em;
+  padding: 0 10px;
+
+}
+
+h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.3em;
+  padding: 0 10px;
+  background-color: #e7e7e7;
+  display: table;
+  margin: 17.264px auto;
+}
+
+.victors-villains {
+  position: relative;
+}
+
+.victors-villains img {
+  position: absolute;
+  top: -10px;
+  z-index: -1;
+}
+/*GALLERY*/
+
+.characters {
+  width: 50%;
+  float:left;
+  text-align: center;
+  line-height: .3em;
+  color: #8c0101;
+  font-family: "librebaskerville";
+  text-transform: uppercase;
+  font-size: .5em;
+
+}
+
+.characters img{
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 7px;
+  box-shadow: 0px 2px 5px #888;
+}
+
+.characters p:nth-child(3) {
+  font-size: 1.5em;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+/*FOOTER*/
+.footer {
+  background-image: url(../img/ornament.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 75px;
+  margin-top: -50px;
+}
+
+.footer p {
+  font-size: .7em;
+  text-align: center;
+}
